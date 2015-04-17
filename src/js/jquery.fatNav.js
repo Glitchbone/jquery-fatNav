@@ -24,7 +24,8 @@
             if (navigator.userAgent.match(/(iPad|iPhone|iPod)/g)) {
                 
                 $nav.children().css({
-                    'height': '110%'
+                    'height': '110%',
+                    'transform': 'translateY(-5%)'
                 });
                 
             }
