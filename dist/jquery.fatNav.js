@@ -16,7 +16,7 @@
 
             var self = this;
             var $nav = this.$nav = $('.fat-nav');
-            var $hamburger = this.$hamburger = $('<a href="javascript:;" class="hamburger"><div class="hamburger__icon"></div></a>');
+            var $hamburger = this.$hamburger = $('<a href="#" class="hamburger"><div class="hamburger__icon"></div></a>');
             
             this._bodyOverflow = $('body').css('overflow');
             
