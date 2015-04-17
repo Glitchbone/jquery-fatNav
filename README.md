@@ -7,7 +7,7 @@ Chubby fullscreen menu with nice hamburger toggle
 Install via bower:
 
 ```sh
-bower install fatNav
+bower install jquery-fatNav
 ```
 
 Or you can add jquery.fatNav.css and jquery.fatNav.js manually to your project
