@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Glitchbone/HumbleGS.git"
+    "url": "https://github.com/Glitchbone/jquery-fatNav.git"
   },
   "keywords": [
     "responsive",
@@ -17,9 +17,9 @@
   "author": "Adrien Glitchbone",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Glitchbone/HumbleGS/issues"
+    "url": "https://github.com/Glitchbone/jquery-fatNav/issues"
   },
-  "homepage": "https://github.com/Glitchbone/HumbleGS",
+  "homepage": "https://github.com/Glitchbone/jquery-fatNav",
   "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-contrib-compass": "^1.0.3",
