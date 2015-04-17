@@ -1,0 +1,77 @@
+$module: ".hamburger";
+
+#{$module} {
+    
+    display: block;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    padding: 12px;
+    @include box-sizing(border-box);
+    
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent;
+    
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    
+    &__icon {
+
+        position: relative;
+        margin-top: $hamburger-height + $hamburger-gutter;
+        margin-bottom: $hamburger-height + $hamburger-gutter;
+
+        &, &:before, &:after {
+            
+            display: block;
+            width: $hamburger-width;
+            height: $hamburger-height;
+            background-color: $hamburger-color;
+            @include transition-property(background-color, transform);
+            @include transition-duration($fat-nav-trans-duration);
+            
+        }
+
+        &:before, &:after {
+            
+            position: absolute;
+            content: "";
+            
+        }
+        
+        $offset-positive: $hamburger-height + $hamburger-gutter;
+        $offset-negative: -($hamburger-height + $hamburger-gutter);
+
+        &:before {
+            top: $offset-negative;
+        }
+
+        &:after {
+            top: $offset-positive;
+        }
+        
+        .active & {
+
+            & {
+                background-color: transparent;
+            }
+            
+            &:before, &:after {
+                background-color: $hamburger-color-active;
+            }
+            
+            &:before {
+                @include transform(translateY($offset-positive) rotate(45deg));
+            }
+            
+            &:after {
+                @include transform(translateY($offset-negative) rotate(-45deg));
+            }
+            
+        }
+    }
+
+}

@@ -1,0 +1,13 @@
+@import "compass/css3";
+
+$hamburger-color: #222;
+$hamburger-color-active: #fff;
+$hamburger-width: 25px;
+$hamburger-height: 2px;
+$hamburger-gutter: 5px;
+$fat-nav-bg-color: rgba(0, 0, 0, 0.8);
+$fat-nav-text-color: $hamburger-color-active;
+$fat-nav-trans-duration: .4s;
+
+@import "hamburger";
+@import "fat-nav";

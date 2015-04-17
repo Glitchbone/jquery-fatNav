@@ -1,0 +1,59 @@
+$module: ".fat-nav";
+
+#{$module} {
+
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background: $fat-nav-bg-color;
+    @include transform(scale(1.4));
+    @include transition-property(transform);
+    @include transition-duration($fat-nav-trans-duration);
+    overflow-y: scroll;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+    
+    &__wrapper {
+        
+        width: 100%;
+        height: 100%;
+        display: table;
+        table-layout: fixed;
+
+    }
+    
+    &.active {
+        @include transform(scale(1));
+    }
+    
+    ul {
+        
+        display: table-cell;
+        vertical-align: middle;
+        margin: 0;
+        padding: 0;
+        
+    }
+    
+    li {
+        
+        list-style-type: none;
+        text-align: center;
+        padding: 10px;
+        font-size: 2em;
+        
+        &, a {
+            color: $fat-nav-text-color;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+    }
+    
+}
