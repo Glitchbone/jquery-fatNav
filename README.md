@@ -2,6 +2,8 @@
 
 Chubby fullscreen menu with nice hamburger toggle
 
+[Demo](http://glitchbone.github.io/jquery-fatNav)
+
 ##Installation
 
 Install via bower:
