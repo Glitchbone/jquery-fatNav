@@ -1,0 +1,25 @@
+{
+  "name": "jquery-fatNav",
+  "version": "1.0.0",
+  "homepage": "https://github.com/Glitchbone/jquery-fatNav",
+  "authors": [
+    "Adrien Glitchbone <adrien@glitchbone.com>"
+  ],
+  "description": "Chubby fullscreen menu with nice hamburger toggle",
+  "main": [
+      "dist/jquery.fatNav.min.css",
+      "dist/jquery.fatNav.min.js"
+  ],
+  "keywords": [
+    "menu",
+    "nav"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
