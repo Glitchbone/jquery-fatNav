@@ -44,19 +44,19 @@
 .hamburger__icon:after {
   top: 7px;
 }
-.active .hamburger__icon {
+.hamburger.active .hamburger__icon {
   background-color: transparent;
 }
-.active .hamburger__icon:before, .active .hamburger__icon:after {
+.hamburger.active .hamburger__icon:before, .hamburger.active .hamburger__icon:after {
   background-color: #fff;
 }
-.active .hamburger__icon:before {
+.hamburger.active .hamburger__icon:before {
   -moz-transform: translateY(7px) rotate(45deg);
   -ms-transform: translateY(7px) rotate(45deg);
   -webkit-transform: translateY(7px) rotate(45deg);
   transform: translateY(7px) rotate(45deg);
 }
-.active .hamburger__icon:after {
+.hamburger.active .hamburger__icon:after {
   -moz-transform: translateY(-7px) rotate(-45deg);
   -ms-transform: translateY(-7px) rotate(-45deg);
   -webkit-transform: translateY(-7px) rotate(-45deg);

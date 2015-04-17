@@ -53,7 +53,7 @@ $module: ".hamburger";
             top: $offset-positive;
         }
         
-        .active & {
+        #{$module}.active & {
 
             & {
                 background-color: transparent;
