@@ -13,7 +13,7 @@ $module: ".fat-nav";
     @include transform(scale(1.4));
     @include transition-property(transform);
     @include transition-duration($fat-nav-trans-duration);
-    overflow-y: scroll;
+    overflow-y: auto;
     overflow-x: hidden;
     -webkit-overflow-scrolling: touch;
     
