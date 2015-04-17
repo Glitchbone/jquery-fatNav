@@ -42,9 +42,9 @@ $.fatNav();
 Default state:
 
 ``` css
-.hamburger__icon, 
-.hamburger__icon:before, 
-.hamburger__icon:after {
+.hamburger .hamburger__icon, 
+.hamburger .hamburger__icon:before, 
+.hamburger .hamburger__icon:after {
     background-color: red;
 }
 ```
@@ -52,8 +52,8 @@ Default state:
 Close button state:
 
 ``` css
-.active .hamburger__icon:before, 
-.active .hamburger__icon:after {
+.hamburger.active .hamburger__icon:before, 
+.hamburger.active .hamburger__icon:after {
     background-color: green;
 }
 ```
