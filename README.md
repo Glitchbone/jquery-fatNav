@@ -35,7 +35,26 @@ Call the javascript function:
 $.fatNav();
 ```
 
-See [demo](http://glitchbone.github.io/jquery-fatNav) for usage example
+##Customizing hamburger color
+
+Default state:
+
+``` css
+.hamburger__icon, 
+.hamburger__icon:before, 
+.hamburger__icon:after {
+    background-color: red;
+}
+```
+
+Close button state:
+
+``` css
+.active .hamburger__icon:before, 
+.active .hamburger__icon:after {
+    background-color: green;
+}
+```
 
 ##Build
 
