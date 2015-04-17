@@ -16,9 +16,18 @@
 
             var self = this;
             var $nav = this.$nav = $('.fat-nav');
-            var $hamburger = this.$hamburger = $('<a href="#" class="hamburger"><div class="hamburger__icon"></div></a>');
+            var $hamburger = this.$hamburger = $('<a href="javascript:void(0)" class="hamburger"><div class="hamburger__icon"></div></a>');
             
             this._bodyOverflow = $('body').css('overflow');
+            
+            // Hack to prevent mobile safari scrolling the whole body when nav is open
+            if (navigator.userAgent.match(/(iPad|iPhone|iPod)/g)) {
+                
+                $nav.children().css({
+                    'height': '110%'
+                });
+                
+            }
             
             $('body').append($hamburger);
             
@@ -32,9 +41,9 @@
             
             var self = this;
 
-            this.$nav.fadeToggle(400, function() {
-                self.toggleBodyOverflow();
-            });
+            this.$nav.fadeToggle(400);
+            
+            self.toggleBodyOverflow();
             
             $().add(this.$hamburger).add(this.$nav).toggleClass('active');
         },
@@ -49,6 +58,10 @@
                 'overflow': $('body').hasClass('no-scroll') ? 'hidden' : self._bodyOverflow
             });
             
+        },
+        
+        preventBodyScroll: function(e) {
+            e.preventDefault();
         }
         
     });
