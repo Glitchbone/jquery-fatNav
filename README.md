@@ -1,10 +1,10 @@
-#jQuery fatNav
+# jQuery fatNav
 
 Chubby fullscreen menu with nice hamburger toggle
 
 [Demo](http://glitchbone.github.io/jquery-fatNav)
 
-##Installation
+## Installation
 
 Install via bower:
 
@@ -14,7 +14,7 @@ bower install jquery-fatNav
 
 Or you can add jquery.fatNav.css and jquery.fatNav.js manually to your project
 
-##Usage
+## Usage
 
 Create the menu in your HTML:
 
@@ -37,7 +37,7 @@ Call the javascript function:
 $.fatNav();
 ```
 
-##Customizing hamburger color
+## Customizing hamburger color
 
 Default state:
 
@@ -58,7 +58,7 @@ Close button state:
 }
 ```
 
-##Build
+## Build
 
 ```sh
 git clone https://github.com/Glitchbone/jquery-fatNav.git my_project
@@ -66,13 +66,13 @@ npm install
 grunt
 ```
 
-##Author
+## Author
 
 **Adrien Glitchbone**
 
 + [https://twitter.com/glitchbone](https://twitter.com/glitchbone)
 + [http://github.com/Glitchbone](http://github.com/Glitchbone)
 
-##License
+## License
 
 jQuery fatNav is available under the MIT license. See the [LICENSE](LICENSE) file for more information.  
