@@ -7,5 +7,6 @@ $fat-nav-bg-color: rgba(0, 0, 0, 0.8);
 $fat-nav-text-color: $hamburger-color-active;
 $fat-nav-trans-duration: .4s;
 
+@import "bourbon";
 @import "hamburger";
 @import "fat-nav";

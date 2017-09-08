@@ -23,7 +23,7 @@ $module: ".fat-nav";
         height: 100%;
         display: table;
         table-layout: fixed;
-
+        font-family: $font-stack-helvetica;
     }
     
     &.active {

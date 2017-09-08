@@ -4,7 +4,10 @@
   "description": "Chubby fullscreen menu with nice hamburger toggle",
   "main": "dist/jquery.fatNav.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "npm run development",
+    "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "prod": "npm run production",
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
   },
   "repository": {
     "type": "git",
@@ -21,6 +24,10 @@
   },
   "homepage": "https://github.com/Glitchbone/jquery-fatNav",
   "devDependencies": {
-    "bourbon": "^5.0.0-beta.8"
+    "bourbon": "^5.0.0-beta.8",
+    "cross-env": "^5.0.5",
+    "jquery": "^3.2.1",
+    "laravel-mix": "^1.4.2",
+    "lodash": "^4.17.4"
   }
 }
